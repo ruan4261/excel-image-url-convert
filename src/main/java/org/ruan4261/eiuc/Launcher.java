@@ -30,7 +30,7 @@ public class Launcher {
                 int col = cell.getColumnIndex();
                 System.out.println("--------------------- Cell{row: " + row + ", col: " + col + "} Opera ---------------------");
                 String content = cell.getStringCellValue();
-                // 图片链接
+                // 提取图片链接
                 String url = new ConstructWithFileIdStrategy().resolve(content);
                 System.out.println(url);
 
